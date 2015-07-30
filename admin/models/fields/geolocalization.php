@@ -41,10 +41,10 @@ class JFormFieldGeolocalization extends JFormField
     protected function getInput()
     {
          
-        $ouptut ='';
+        $output ='';
         $url = 'index.php?option=com_jea&amp;view=property&amp;layout=geolocalization&amp;tmpl=component';
          
-        $ouptut = '<div class="button2-left">'. "\n"
+        $output = '<div class="button2-left">'. "\n"
                 . '<div class="blank"><a class="modal" href="#map-box-content" rel="{handler: \'clone\', size: {x: 800, y: 500}, onOpen:initBoxContent, onClose:closeBoxContent }">'
                 . JText::_('COM_JEA_MAP_OPEN'). '</a></div>'. "\n"
                 . '</div>'. "\n"
@@ -163,7 +163,7 @@ class JFormFieldGeolocalization extends JFormField
         ");
 
         JFactory::getDocument()->addScript('http://maps.google.com/maps/api/js?sensor=false&language=' . $lang . '&region=' . $region);
-        return $ouptut;
+        return $output;
     }
 
 
